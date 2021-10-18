@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		C568F799271603F900E3B499 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568F798271603F900E3B499 /* AppDelegate.swift */; };
 		C568F79B271603F900E3B499 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568F79A271603F900E3B499 /* SceneDelegate.swift */; };
-		C568F79D271603F900E3B499 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568F79C271603F900E3B499 /* ViewController.swift */; };
 		C568F7A0271603F900E3B499 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C568F79E271603F900E3B499 /* Main.storyboard */; };
 		C568F7A22716040200E3B499 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C568F7A12716040200E3B499 /* Assets.xcassets */; };
 		C568F7A52716040200E3B499 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C568F7A32716040200E3B499 /* LaunchScreen.storyboard */; };
 		C568F7B02716040300E3B499 /* PreworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568F7AF2716040300E3B499 /* PreworkTests.swift */; };
 		C568F7BB2716040300E3B499 /* PreworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568F7BA2716040300E3B499 /* PreworkUITests.swift */; };
+		C5FC19CF271D1A5200FD8192 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C568F79C271603F900E3B499 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -258,7 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C568F79D271603F900E3B499 /* ViewController.swift in Sources */,
+				C5FC19CF271D1A5200FD8192 /* ViewController.swift in Sources */,
 				C568F799271603F900E3B499 /* AppDelegate.swift in Sources */,
 				C568F79B271603F900E3B499 /* SceneDelegate.swift in Sources */,
 			);
