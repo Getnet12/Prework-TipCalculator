@@ -33,6 +33,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HKy-oe-3mZ">
+                                <rect key="frame" x="116" y="268.33333333333331" width="248" height="49.666666666666686"/>
+                                <segments>
+                                    <segment title="15%"/>
+                                    <segment title="18%"/>
+                                    <segment title="20%"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="systemGray6Color"/>
+                                <connections>
+                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="OGK-0G-Pww"/>
+                                </connections>
+                            </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGk-LE-g6n">
                                 <rect key="frame" x="273" y="464" width="83" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -53,7 +65,7 @@
                                     <accessibilityTraits key="traits" staticText="YES"/>
                                 </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="editingChanged" id="KIv-mh-Uzh"/>
                                 </connections>
@@ -70,31 +82,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="HKy-oe-3mZ">
-                                <rect key="frame" x="116" y="268.33333333333331" width="248" height="49.666666666666686"/>
-                                <segments>
-                                    <segment title="15%"/>
-                                    <segment title="18%"/>
-                                    <segment title="20%"/>
-                                </segments>
-                                <color key="selectedSegmentTintColor" systemColor="systemGray6Color"/>
-                                <connections>
-                                    <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="valueChanged" id="OGK-0G-Pww"/>
-                                </connections>
-                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btv-SL-d7L">
+                                <rect key="frame" x="130" y="54" width="154" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="25"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemTealColor"/>
                         <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="T3v-wA-Cze" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="1gf-cH-SjM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="btv-SL-d7L" secondAttribute="trailing" constant="130" id="24V-Yk-2Qv"/>
                             <constraint firstItem="Pcq-v1-YrK" firstAttribute="top" secondItem="T3v-wA-Cze" secondAttribute="bottom" constant="62" id="2Jd-Ec-iy2"/>
+                            <constraint firstItem="T3v-wA-Cze" firstAttribute="top" secondItem="btv-SL-d7L" secondAttribute="bottom" constant="60" id="2P1-m0-5Du"/>
                             <constraint firstItem="ire-Nu-KCy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="2jY-N4-muu"/>
                             <constraint firstItem="Pcq-v1-YrK" firstAttribute="centerY" secondItem="HKy-oe-3mZ" secondAttribute="centerY" id="6bV-3P-7Bz"/>
                             <constraint firstItem="bCz-2M-hhF" firstAttribute="top" secondItem="mjd-aV-uP2" secondAttribute="bottom" constant="20.670000000000002" id="9hR-Mi-hLX"/>
+                            <constraint firstItem="btv-SL-d7L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="BuC-Aj-3Xf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bCz-2M-hhF" secondAttribute="bottom" constant="373" id="CaB-JM-9dj"/>
                             <constraint firstItem="mjd-aV-uP2" firstAttribute="top" secondItem="Pcq-v1-YrK" secondAttribute="bottom" constant="63" id="EuN-w2-kxh"/>
                             <constraint firstItem="Pcq-v1-YrK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="I8N-JU-k3B"/>
+                            <constraint firstItem="btv-SL-d7L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="JNV-tc-9hY"/>
                             <constraint firstItem="TC3-EL-hsY" firstAttribute="top" secondItem="HKy-oe-3mZ" secondAttribute="bottom" constant="83" id="NQ5-Ii-MeR"/>
                             <constraint firstItem="TC3-EL-hsY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mjd-aV-uP2" secondAttribute="trailing" constant="8" symbolic="YES" id="Nmm-O7-2x0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IGk-LE-g6n" secondAttribute="trailing" constant="58" id="Pyd-LO-zPA"/>
